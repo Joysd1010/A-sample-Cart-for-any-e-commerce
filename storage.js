@@ -30,6 +30,11 @@ document.getElementById('view-btn').addEventListener('click',function(){
     let objectLength = Object.keys(cart).length
     console.log(objectLength)
     if(objectLength!=0){
+         let p=document.getElementById('noText');
+        p.textContent=``
+        let ul=document.getElementById('cart-item');
+        ul.innerHTML=``
+       
         for(let item in cart){
         let ul=document.getElementById('cart-item');
         let li=document.createElement('li');
